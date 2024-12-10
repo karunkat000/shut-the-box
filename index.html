@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SHUT THE BOX</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./game.js" defer></script>
+
+    </head>
+
+    <body>
+
+        <!-- make a starting screen that has inputs for the two names and a start game button -->
+        <!-- Make a game board that counts the rounds and what turn it is -->
+        <!-- Make a scorecard that had the names as well as the rounds -->
+        <!-- Winner section with the name after five rounds -->
+
+        <div class="display-screen">
+
+            <div class="start-screen">
+
+                <h1>Shut the Box!</h1>
+                <input id="p1-name" autofocus autocomplete="off">
+                <input id="p2-name" autofocus autocomplete="off">
+                <button id="start-btn">Start Game</button>
+
+            </div>
+
+            <div class="game-board">
+
+                <h1>Shut the Box!</h1>
+                <p id="info-vs"></p>
+
+                <div class="dice">
+
+                    <p class="die"><i id="die1" class="bi bi-dice-6"></i></p>
+                    <p class="die"><i id="die2" class="bi bi-dice-6"></i></p>
+
+                </div>
+
+                <div class="info">
+
+                    <p id="player-turn"></p>
+                    <p id="round-number"></p>
+
+                </div>
+
+                <div class="nums">
+
+                    <div class="num" id="num1">1</div>
+                    <div class="num" id="num2">2</div>
+                    <div class="num" id="num3">3</div>
+                    <div class="num" id="num4">4</div>
+                    <div class="num" id="num5">5</div>
+                    <div class="num" id="num6">6</div>
+                    <div class="num" id="num7">7</div>
+                    <div class="num" id="num8">8</div>
+                    <div class="num" id="num9">9</div>
+
+                </div>
+
+                <div class="actions">
+
+                    <button id="roll-btn" class="action-btn">Roll</button>
+                    <button id="individual-btn" class="action-btn">Individual</button>
+                    <button id="sum-btn" class="action-btn">Sum</button>
+                    <button id="end-btn" class="action-btn">End Turn</button>
+
+                </div>
+
+                <i id="score-popup-btn" class="bi bi-info-circle-fill"></i>
+
+            </div>
+
+            <div class="score-card">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th class="score-round"></th>
+                            <th id="p1-score-title" class="score-box"></th>
+                            <th id="p2-score-title" class="score-box"></th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="score-rows">
+
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="winner">
+
+                <p id="winner-text"></p>
+                <p id="end-scores"></p>
+                <button id="play-again-btn" class="action-btn">Play Again</button>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
